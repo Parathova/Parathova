@@ -902,7 +902,7 @@
     <span>ECE-224: Embedded Microprocessor Systems (C, Verilog, VHDL) </span>
     <span>ECE-240: Electronic Circuits </span>
     <span>ECE-298: Instrumentation and Prototyping Labratory</span>
-    <span>ECE-252: Systems Programming and Concurrency</span>
+    <span>ECE-252: Systems Programming and Concurrency (C, Linux)</span>
     <span> ECE-250: Data Structures & Algorithms (C++) </span>
   </div>
 </div>
@@ -953,6 +953,23 @@
               data-tags controls which filters this project appears under.
               You can list multiple categories separated by spaces.
             -->
+
+
+              <div class="project-card" data-project="robotics" data-tags="hardware embedded">
+  <img src="FIRST Robotics/FIRST4.jpg" alt="project image">
+  <div class="project-card-content">
+    <p class="project-type">Robotics</p>
+    <p class="project-name">FIRST Robotics Team</p>
+    <p> Hardware and outreach executive for FIRST Tech Challenge Robotics Team. </p>
+    <div class="tags">
+      <span class="tag">Robotics</span>
+      <span class="tag">Java</span>
+      <span class="tag">Hardware</span>
+    </div>
+    <span class="project-link">open project →</span>
+  </div>
+</div>
+
             <div class="project-card" data-project="PCB" data-tags="hardware">
               <img src="PCB_Photos/myFirstPCB.png" alt="My first PCB">
               <div class="project-card-content">
@@ -963,6 +980,21 @@
                 <span class="project-link">open project →</span>
               </div>
             </div>
+<div class="project-card" data-project="maze" data-tags="hardware embedded">
+  <img src="Maze Game/maze.png" alt="Maze Game">
+  <div class="project-card-content">
+    <p class="project-type">Embedded</p>
+    <p class="project-name">STM32-Controlled Maze Game</p>
+    <p>An interactive mechatronic maze game controlled through STM32 firmware and serial communication.</p>
+    <div class="tags">
+      <span class="tag">STM32</span>
+      <span class="tag">UART</span>
+      <span class="tag">Embedded</span>
+      <span class="tag">C</span>
+    </div>
+    <span class="project-link">open project →</span>
+  </div>
+</div>
 
             <div class="project-card" data-project="riscv" data-tags="embedded hardware">
               <img src="RISC-V Photos/RISC-V.jpeg" alt="RISC-V project">
@@ -987,10 +1019,10 @@
             </div>
 
             <div class="project-card" data-project="medicine" data-tags="hardware">
-              <img src="Medicine Dispenser/medicine.png" alt="medicine dispenser">
+              <img src="Medicine Dispenser/schematic.png" alt="medicine dispenser">
               <div class="project-card-content">
                 <p class="project-type">Embedded/Firmware</p>
-                <p class="project-name">STM32-Based Medicine Dispenser (C++)</p>
+                <p class="project-name">STM32-Based Medicine Dispenser (C/C++)</p>
                 <p>A medicine dispenser made in a team using two STM32 microcontrollers</p>
                 <div class="tags"><span class="tag">embedded</span><span class="tag">STM32</span><span class="tag">C++</span></div>
                 <span class="project-link">open project →</span>
@@ -1003,6 +1035,81 @@
           To customize: edit the title, meta line, paragraph, bullet list, tags, and gallery images.
           To add more photos, add more <img src="..."> lines inside .gallery.
         -->
+          <article class="project-detail" id="detail-maze">
+  <button class="btn back-button" data-back-projects>← Back to projects</button>
+
+  <div class="section-header">
+    <span class="section-label">embedded</span>
+    <span class="section-line"></span>
+  </div>
+
+  <h2>STM32-Controlled Maze Game</h2>
+  <p class="meta">STM32 · UART · Embedded Systems · C</p>
+
+  <div class="detail-layout">
+    <div class="project-text">
+      <p>
+       Developed an interactive mechatronic maze game using STM32-based firmware to control a NEMA 17 stepper motor via serial communication.
+      </p>
+
+      <ul>
+        <li>Implemented interrupt-driven UART communication on an STM32 to parse incoming commands and update motor control registers.Implemented interrupt-driven UART communication on an STM32 to parse incoming user commands and update motor control registers.</li>
+
+        <li>Ported the initial hardware logic from a manual Arduino prototype to an STM32 architecture to support real-time serial control.</li>
+
+        <li>Integrated firmware with a custom motor controller PCB to ensure reliable signal routing between the microcontroller and the motor driver.</li>
+
+        <!-- <li>Developed an interactive maze game capable of steering a ball through controlled motorized movement.</li> -->
+      </ul>
+
+      <p>
+        Related hardware project:
+        <a href="#project-PCB" style="color: var(--pink);">
+          View Custom Motor Driver PCB →
+        </a>
+      </p>
+    </div>
+
+    <div class="gallery">
+      <img src="Maze Game/maze.png" alt="Maze Game">
+      <img src="Maze Game/maze1.png" alt="STM32 Control System">
+      
+    </div>
+  </div>
+</article>
+
+          <article class="project-detail" id="detail-robotics">
+  <button class="btn back-button" data-back-projects>← Back to projects</button>
+
+  <div class="section-header">
+    <span class="section-label">embedded</span>
+    <span class="section-line"></span>
+  </div>
+
+  <h2>FIRST Tech Robotics team</h2>
+  <p class="meta">Embedded · Hardware · Java</p>
+
+  <div class="detail-layout">
+    <div class="project-text">
+      <p><p>
+An FTC robotics project involving the design, assembly, and testing of a competition robot. Achieved 6th place at regional qualifiers and earned 2nd place for the Think Award.
+</p></p>
+
+      <ul>
+        <li>Contributed to the design, assembly, and testing of an FTC competition robot.</li>
+  <li>Served as Hardware and Outreach Executive, supporting team operations and community events.</li>
+  <li>Achieved 6th place at regional qualifiers and received 2nd place for the Think Award.</li>
+      </ul>
+    </div>
+
+    <div class="gallery">
+      <img src="FIRST Robotics/FIRST3.jpeg" alt="project image">
+      <img src="FIRST Robotics/FIRST1.jpeg" alt="second image">
+      <img src="FIRST Robotics/FIRST2.jpeg" alt="third image">
+      <img src="FIRST Robotics/FIRST4.jpg" alt="fourth image">
+    </div>
+  </div>
+</article>
         <article class="project-detail" id="detail-PCB">
           <button class="btn back-button" data-back-projects>← Back to projects</button>
           <div class="section-header"><span class="section-label">hardware design</span><span class="section-line"></span></div>
@@ -1068,14 +1175,14 @@
 
         <article class="project-detail" id="detail-medicine">
           <button class="btn back-button" data-back-projects>← Back to projects</button>
-          <div class="section-header"><span class="section-label">STM32-Based Medicine Dispenser (C++)</span><span class="section-line"></span></div>
-          <h2>STM32-Based Medicine Dispenser(C++)</h2>
-          <p class="meta">Embedded · Hardware · STM32 · C++</p>
+          <div class="section-header"><span class="section-label">STM32-Based Medicine Dispenser (C/C++)</span><span class="section-line"></span></div>
+          <h2>STM32-Based Medicine Dispenser(C/C++)</h2>
+          <p class="meta">Embedded · Hardware · STM32 · C/C++</p>
           <div class="detail-layout">
             <div class="project-text">
               <p>A medicine dispenser made in a team using 2 STM32 microcontrollers</p>
               <ul>
-                <li>Engineered dispenser using STM32 MCU with UART comm. in C++, optimizing servo control for 92% dispensing accuracy</li>
+                <li>Engineered dispenser using STM32 MCU with UART comm. in C, optimizing servo control for 92% dispensing accuracy</li>
                 <li>Designed schematics and a 2:1 gear mechanism, authoring 32 pages of technical assembly documentation</li>
                 <li>Implemented 5 structured testing protocols to validate system and reduce dispensing errors by 43% compared to prototypes
 
@@ -1083,8 +1190,8 @@
 <p>Image shown is from a very early design iteration</p>
               </ul>
             </div>
-           <div class="gallery single-image">
-  <img src="Medicine Dispenser/medicine.png" alt="medicine dispenser">
+           <!-- <div class="gallery single-image"> -->
+  <div class="gallery"><img src="Medicine Dispenser/medicine.png" alt="drawing"><img src="Medicine Dispenser/schematic.png" alt="dispenser"></div>
 </div>
         </article>
       </section>
